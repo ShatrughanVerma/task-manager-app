@@ -1,0 +1,8 @@
+﻿{
+    "name": "shatrughan/task-manager",
+    "description": "Task Manager with PHP and PostgreSQL",
+    "type": "project",
+    "require": {
+        "php": ">=8.0"
+    }
+}
