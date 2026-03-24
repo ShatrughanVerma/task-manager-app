@@ -1,11 +1,16 @@
-﻿{
+{
+  "$schema": "https://railway.app/railway.schema.json",
   "build": {
     "builder": "NIXPACKS"
   },
   "nixpacks": {
     "phases": {
       "setup": {
-        "nixPkgs": ["php82", "php82Extensions.pdo_pgsql", "php82Extensions.pgsql"]
+        "nixPkgs": [
+          "php82",
+          "php82Extensions.pdo_pgsql",
+          "php82Extensions.pgsql"
+        ]
       },
       "start": {
         "cmd": "cd frontend && php -S 0.0.0.0:8000"
