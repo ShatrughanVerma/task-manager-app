@@ -3,23 +3,12 @@
     "builder": "NIXPACKS"
   },
   "nixpacks": {
-    "plan": [
-      {
-        "name": "php",
-        "version": "8.2",
-        "provides": ["php"]
-      }
-    ],
     "phases": {
       "setup": {
-        "nixPkgs": ["php82", "php82Extensions.pdo_pgsql", "php82Extensions.pgsql"],
-        "aptPkgs": ["postgresql-client"]
-      },
-      "install": {
-        "cmds": []
+        "nixPkgs": ["php82", "php82Extensions.pdo_pgsql", "php82Extensions.pgsql"]
       },
       "start": {
-        "cmd": "php -S 0.0.0.0:8000 -t frontend/"
+        "cmd": "cd frontend && php -S 0.0.0.0:8000"
       }
     }
   }
